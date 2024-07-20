@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .border {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 80%;
+            margin: auto;
+            margin-top: 50px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+        .word {
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        .msg {
+            color: red;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: cadetblue;
+        }
+        td {
+            background-color: #fff;
+        }
+        td a {
+            color: blue;
+            text-decoration: none;
+        }
+        td a:hover {
+            text-decoration: underline;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        #table {
+            width: 100%;
+        }
+
+        nav {
+            background-color: rgb(2, 69, 2); /* Background color */
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left; /* Float the links to the left */
+            display: block; /* Make links block elements */
+            color: white; /* Text color */
+            text-align: center; /* Center align text */
+            padding: 14px 16px; /* Padding */
+            text-decoration: none; /* Remove underline */
+        }
+
+        nav a:hover {
+            background-color: #ddd; /* Background color on hover */
+            color: rgb(0, 0, 0); /* Text color on hover */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">HOME</a>
+        <a href="{{ url_for('about_us') }}">ABOUT US</a>
+        <a href="{{ url_for('service') }}">SERVICE</a>
+        <a href="{{ url_for('doctors') }}">DOCTORS</a>
+        <a href="{{ url_for('contact_us') }}">CONTACT US</a>
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>
+        </nav>
+    <table >
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Mobile Number</th>
+            <th>Sex</th>
+            <th>Appointment Date</th>
+            <th>Description</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <tbody>
+            {% for row in data %}
+            <tr>
+                <td>{{ row[0] }}</td> <!-- Assuming story[0] is the User ID -->
+                <td>{{ row[1] }}</td> <!-- Assuming story[1] is the Story ID -->
+                <td>{{ row[2] }}</td> <!-- Assuming story[2] is the Title -->
+                <td>{{  row[3] }}</td> <!-- Assuming story[3] is the Story -->
+                <td>{{  row[4] }}</td>
+                <td>{{  row[5] }}</td>
+                <td>{{  row[6] }}</td>
+                <td>{{  row[7] }}</td>
+                <td><button style="background-color: #4CAF50; color: #fff;"><a href="{{ url_for('update',  patient_ID=row[0]) }}">Edit</a></button></td>
+                <td><button style="background-color: #4CAF50; color: #fff;"><a href="{{ url_for('delete',   patient_ID=row[0]) }}">Delete</a></button></td>
+                
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

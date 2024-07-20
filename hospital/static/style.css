@@ -1,0 +1,173 @@
+/* home page */
+*{
+    margin: auto;
+    padding: auto;
+}
+#head {
+    background-color: #2FA5EB;
+    padding: 10px;
+    color: white;
+    padding-left: 1050px;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav {
+    padding-left: 800px;
+    border-bottom: 1px solid rgb(228, 222, 222);
+}
+#super {
+    font-size: 50px;
+    color: #2FA5EB;
+    font-family: forte;
+    
+}
+
+span {
+    font-size: 50px;
+    color: black;
+    font-family: forte;
+}
+#tab {
+    padding-left: 260px;
+    
+}
+a:link {
+    text-decoration: none;
+    color: grey;
+    padding-left: 30px;
+}
+a:hover {
+    color: rgb(23, 18, 184);
+    text-decoration: underline;
+}
+ a:active {
+    color: gray;
+ } 
+ a:visited {
+    color: gray;
+}  
+#home {
+   
+    height: 400px;
+    width: 1200px;
+    background-image: url(pictures/a.jpg); 
+    /* margin-left: 200px; */
+    padding-top: 0%;
+    
+}
+#line 
+{
+    border-bottom: 1px solid rgb(221, 216, 216); 
+    width: 100%;
+}
+#back {
+    background-color: gray;
+    width: 1000px;
+    height: 300px;
+    /* margin-left: 100px; */
+
+}
+#back.first {
+    opacity: 0.5;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+}
+article {
+    /* margin-left: 250px; */
+    padding: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkgrey;
+    width:1200px ;
+    
+}
+#s {
+    color: black;
+}
+#make {
+    text-align: center;
+    font-family: forte;
+}
+#form {
+    margin-left: 750px;
+    padding: 30px;
+    
+}
+.name {
+    padding: 10px;
+    width: 185px;
+}
+.name1 {
+    width: 210px;
+    padding: 10px;
+}
+textarea {
+    padding: 10px;
+}
+#footer {
+    background-color: #2FA5EB;
+    color: white;
+    
+}
+.footer {
+    max-width: 1150px;
+    background-color: black;
+    padding: 10px;
+    margin-left: 170px;
+}
+main {
+    padding: 15px;
+    /* margin-left: 250px; */
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#submit {
+    width: 500px;
+    background-color: #2FA5EB;
+    color: white;
+}
+/* end of home page */
+/* about us page */
+/* #chill {
+    margin-left: 190px;
+} */
+span1 {
+    background-color: yellow;
+}
+h3 {
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img {
+    float: right;
+    width: 400px;
+    height: 250px;
+    margin-right: 30px;
+}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkgrey;
+    padding: 15px;
+}
+#mom {
+    /* margin-left: 20px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+}
+/* end of about us page */
+/* service page */
+#serve {
+    /* margin-left: 250px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+}
+#light {
+    color: gray;
+    padding: 10px;
+}
+/* end of service */

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF=8">
+        <title>
+            Hospital
+        </title>
+    </head>
+    <link rel="stylesheet" href="../static/style.css">
+    <style>
+
+    </style>
+    <body>
+    <section class="sticky">   
+    <div width="100%" id="head">    
+    <h8>contact us +9177249520/01|suh@hospital.com</h8>
+    </div>
+    <div id="tab">
+    <h8 id="super">SUPER</h8>&nbsp;<span>Hospital</span></div>
+       <nav>
+        <a href="{{ url_for('index') }}">HOME</a>
+        <a href="{{ url_for('about_us') }}">ABOUT US</a>
+        <a href="{{ url_for('service') }}">SERVICE</a>
+        <a href="{{ url_for('doctors') }}">DOCTORS</a>
+        <a href="{{ url_for('contact_us') }}">CONTACT US</a>
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>
+        </nav>
+    </section>
+    <div width="100%" id="line">
+    <div id="home">
+      
+    <div id="back" class="first">
+    <br><br><br><br><br><h1>Health Care Services</h1>
+    <h3>We Care About Your Health</h3>
+    </div>    
+    </div>
+    </div>
+    
+  <div width="100%">
+    <article>
+    <p id="s">we are medical center</p>
+    <h3 id="s">We Have Medicare Plan Options for You!</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita cumque perspiciatis, tempore dolore eius quidem<br>
+    itaque corporis at voluptasrerum vel unde placeat labore ratione odit. Nostrum possimus error obcaecati! Lorem ips<br>
+    um dolor, sit amet consectetur adipisicing elit. Tenetur nemo corrupti et eveniet doloribus fugit explicabo.
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita cumque perspiciatis, tempore dolore eius quidem<br>
+    itaque corporis at voluptasrerum vel unde placeat labore ratione odit. Nostrum possimus error obcaecati! Lorem ips<br>
+    um dolor, sit amet consectetur adipisicing elit. Tenetur nemo corrupti et eveniet doloribus fugit explicabo rectuanord<br> 
+    faucibus nec.
+    <ul><br>
+    <li>Nulla venenatis autor quam,ac porta lectus dictum in</li>
+    <li>Aliquam sodalesnnisi sit amet lorem</li>
+    <li>Suspendisse vulputate tellus in justo canvallis imperdiet</li>
+    <li>Morbi id lorem consequat,sodales mi non</li>
+    <li>Nulla venenatis auctor quam,ac porta lectus dictum in</li>    
+    </ul>     
+    </article></div>
+    <hr >  
+    <div>
+    <h1 id="make">Make an Appointment</h1>
+    <div class="msg">{{ data }}</div>
+    <form  method="post" action="/edit">
+    <table id="form" width="40%" cellpadding="20" cellspacing="0">
+        <tr><td><input type="hidden" name="patient_ID" id="patient_ID" value="{{data[0]}}"></td></tr>
+    <tr>
+    <td><label for="fname"></label><input id="fname" name="fname"  type="text" placeholder="First Name" required class="name" required value="{{ data[1] }}"></td>
+    <td><label for="lname"></label><input id="lname" name="lname"type="text" placeholder="Last Name" required class="name" required value="{{ data[2] }}"></td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td><label for="email"></label><input id="email" name="email" type="email" placeholder="Email id" required class="name" required value="{{ data[3] }}"></td>
+        <td><label for="mobile"></label><input type="mobile" name="mobile" id="mobile" placeholder="Mobile No" required class="name" required value="{{ data[4] }}"></td>
+    </tr>
+    <tr>
+        <td><label for="sex"></label><select id="sex" name="sex" class="name1" >
+            <option value="-">-sex-</option>
+            <option value="m">male</option>
+            <option value="f">female</option>{{ data[5] }}
+        </select></td>
+        <td><label for="text"></label><input id="text" name="text" type="text"  placeholder="appointment date" class="name" required value="{{ data[6] }}"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><label for="address"></label><textarea id="address" name="address" rows="6" cols="60">{{ data[7] }}</textarea></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="submit" value="SUBMIT" class="name" id="submit"></td>
+    </tr>
+    </table>    
+    </form>    
+    </div>
+    <div width="100%" id="footer">
+    <div class="footer">
+        <h>@SUPER Hospital,site designed & developed by mitraz</h>
+        </div>
+        </div>
+    </body>
+    </html>
