@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <div style="padding-top: 130px;">
+        <!-- header -->
+        <div style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            position: fixed; top: 0; width: 100%;
+            background-color: #323232;
+            opacity: 0.9;
+            z-index: 9999;
+          " class="navlinks">
+            <a href="#" class="links">
+                <img src="../static/pictures/WhatsApp Image 2024-07-13 at 20.39.21_f535d08b.jpg" style="height: 110px;width:110px;">
+                <span style="color: #ecf0f1; font-size: 60px; font-family: forte;"> Task Management</span>
+            </a>
+        </div>
+        <!-- header -->
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="website">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="view_categories">Add Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="dashboard">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/create_task">Create Tasks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/view_tasks">View Tasks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/view_category">View Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/view_priority">View Priorities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/view_due_dates">View Due dates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/edit_account">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="logout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 main-content">
+                
+                    <div class="section">
+                         <h1>Add Category</h1> 
+    
+                        
+                        <form action="{{ url_for('create_category') }}" method="POST">
+                            <div class="form-group">
+                                <label for="category">Category Name:</label>
+                                <input type="text" id="category" name="category" class="form-control" required>
+                            </div>
+                            <form action="{{ url_for('view_categories') }}" method="GET">
+                            <button type="submit" class="btn btn-primary">Add Category</button>
+                            </form>
+                        </form> 
+                        </div>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container" align="center">
+            <p>&copy; TASK MANAGEMENT. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms of Service</a> |
+                <a href="#">Contact Us</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Function to handle navigation with confirmation
+        function navigateTo(url) {
+            if (confirm('Are you sure you want to navigate to this page?')) {
+                window.location.href = url;
+            }
+        }
+    </script>
+</body>
+
+</html>
