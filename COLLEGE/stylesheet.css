@@ -1,0 +1,149 @@
+* {
+    margin: auto;
+    
+}
+#g {
+    background-color: mediumblue;
+    color: white;
+    width: 100%;
+   
+
+}
+#h {
+    width: 1000px;
+    margin-left: 200px;
+    font-size: 20px;
+}
+#N {
+    width: 5px;
+    background-color: white;
+    color: red;
+    }
+#my {
+    padding: 10px;
+
+}
+nav {
+    float: right;
+}
+a:link {
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+}
+#con {
+   background-color: aliceblue;
+}
+.recent {
+    display: inline-block;
+    background-color: white;
+    padding: 20px;
+}
+
+#cam {
+    float: left;
+}
+#whole{
+    
+    padding: 100px;
+    background-color: aliceblue;
+    text-align: center;
+}
+#home{
+    display:inline-grid;
+    background-color: white;
+    width: 30%;
+}
+h3 {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    width: 93%;
+    padding: 10px;
+    font-weight: bold;
+}
+#date {
+    color: red;
+}
+.us {
+    float: right;
+}
+#ram {
+    padding: 100px;
+    background-color: white;
+}
+#siya {
+    padding: 20px;
+    width: 92%;
+}
+#lo {
+    padding: 20px;
+}
+#ou {
+    padding: 5px;
+    color: #2FA5EB;
+}
+#more {
+    text-decoration: underline;
+    
+    
+}
+.inst {
+    color: red;
+    font-size: 20px;
+}
+#chair {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#guru {
+    width: 30%;
+    display: inline-block;
+    border:solid  #2FA5EB;
+    border-radius: 10px;
+    /* padding: 18px; */
+    background-color: aliceblue;
+    margin: 15px;
+}
+#qho {
+    margin-left: 150px;
+}
+#oye {
+    
+    padding: 30px;
+}
+#rating {
+    display: inline-block;
+    padding: 20px;
+    margin-left: 50px;
+}
+#gallery {
+    padding: 100px;
+    background-color: aliceblue;
+    
+}
+#myne {
+    display: inline-flex ;
+    width: 23%;
+    padding: 10px;
+}
+#gall {
+    display: inline-flex;
+    width: 23%;
+    padding: 10px;
+}
+#bot {
+    text-align: center;
+    padding: 30px;
+}
+.sticky {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.new {
+    float: right;
+}
+
+
+
